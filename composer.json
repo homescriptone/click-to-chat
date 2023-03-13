@@ -1,0 +1,23 @@
+{
+    "name": "homescriptone/click-to-chat-whatsapp",
+    "autoload": {
+        "psr-4": {
+            "Homescriptone\\ClickToChatWhatsapp\\": "src"
+        }
+    },
+    "post-install-cmd": [
+        "echo Copying files...",
+        "copy('./public/vendor/', './public/vendor')"
+    ],
+    "extra": {
+        "statamic": {
+            "name": "Click To Chat Widget",
+            "description": "Click To Chat Whatsapp addon"
+        },
+        "laravel": {
+            "providers": [
+                "Homescriptone\\ClickToChatWhatsapp\\ServiceProvider"
+            ]
+        }
+    }
+}

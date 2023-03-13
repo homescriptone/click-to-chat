@@ -1,0 +1,15 @@
+{
+  "name": "click-to-chat-whatsapp",
+  "version": "1.0.0",
+  "description": "> Click To Chat Whatsapp is a Statamic addon that does something pretty neat.",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49"
+  }
+}

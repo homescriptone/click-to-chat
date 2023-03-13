@@ -38,7 +38,7 @@ To configure the widget, access the Control Panel and head to the Click To Chat 
 
 Once you have configured the settings in the Control Panel, make sure to add the tag to any of the layouts of your website. The tag to use is:
 
-> `{{clicktochat}}`
+> {{clicktochat}}
 
 ### Support
 

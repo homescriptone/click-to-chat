@@ -1,18 +1,37 @@
 {
-    "name": "homescriptone/click-to-chat-whatsapp",
+    "name": "homescriptone/click-to-chat",
+    "type": "statamic-addon",
+    "description": "Add a Click to Chat button on your Statamic website to enable easy communication with customers on WhatsApp.",
+    "keywords": [
+        "statamic",
+        "add-on",
+        "whatsapp",
+        "chat",
+        "customer support"
+    ],
     "autoload": {
         "psr-4": {
             "Homescriptone\\ClickToChatWhatsapp\\": "src"
         }
     },
-    "post-install-cmd": [
-        "echo Copying files...",
-        "copy('./public/vendor/', './public/vendor')"
+    "homepage": "https://statamic.com/addons/homescriptone/click-to-chat",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Homescriptone Solutions",
+            "email": "support@homescriptone.com"
+        }
     ],
+    "support": {
+        "email": "support@homescriptone.com"
+    },
+    "require": {
+        "statamic/cms": "^3.0"
+    },
     "extra": {
         "statamic": {
-            "name": "Click To Chat Widget",
-            "description": "Click To Chat Whatsapp addon"
+            "name": "Click To Chat for Statamic",
+            "description": "Add a Click to Chat button on your Statamic website to enable easy communication with customers on WhatsApp."
         },
         "laravel": {
             "providers": [

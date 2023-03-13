@@ -2,6 +2,7 @@
 namespace Homescriptone\ClickToChatWhatsapp\Http\Controllers;
 
 use Homescriptone\ClickToChatWhatsapp\MetaValues;
+use Illuminate\Http\JsonResponse;
 use Statamic\Http\Controllers\CP\CpController;
 use Statamic\Support\Arr;
 use Illuminate\Http\Request;
@@ -21,12 +22,22 @@ class SettingsController extends CpController
 
         $values = new MetaValues( $fields );
 
-
+        $field_values = $values->values();
+        if ( count( $values->values() ) == 0 ) {
+            $field_values = array(
+                'display-widget' => false,
+                'widget-app'  => 'whatsapp',
+                'message' => 'Welcome to our website and chat',
+                'phone-number' => '4405100809023',
+                'widget-position' => 'left'
+            );
+        }
+        
         $data = [
             'title' => 'Settings',
             'user' => $user, 
             'blueprint' => $blueprint->toPublishArray(),
-            'values' =>  $values->values(),
+            'values' => $field_values,
             'meta' => $fields->meta(),
         ];
  
@@ -46,8 +57,10 @@ class SettingsController extends CpController
 
         MetaValues::make($values)->save();
 
-        return [
-            'redirect' => cp_route( 'homescriptone/click-to-chat.settings' ),
-        ];
+        return new JsonResponse(
+            array(
+                'redirect' => cp_route( 'homescriptone/click-to-chat.settings' ) 
+            )
+        );
     }
 }

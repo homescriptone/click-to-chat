@@ -9,17 +9,6 @@ class Formulus
 {
     public static function getBlueprint(): FieldsBlueprint
     {
-        $customerField = [
-            'mode' => 'default',
-            'collections' => [
-                'customers',
-            ],
-            'display' => __('Customers'),
-            'type' => 'entries',
-            'icon' => 'entries',
-            'instructions' => __('If selected, this coupon will only be valid for selected customers.'),
-            'width' => 50,
-        ];
 
         return Blueprint::makeFromSections([
             'main' => [
@@ -42,21 +31,21 @@ class Formulus
                         'push_tags' => false,
                         'cast_booleans' => false,
                         'type' => 'select',
-                        'display' => __('Widget App'),
+                        'display' => __('Widget App :'),
                         'default' => 'whatsapp',
                         'instructions' => __('Choose the application to use for the Click To Chat widget.'),
                     ],
                     'message' => [
                         'type' => 'textarea',
                         'instructions' => __('Define the default message, to send when using the Click To Chat widget.'),
-                        'display' => __('Message'),
+                        'display' => __('Message :'),
                     ],
                     'phone-number' => [
                         'input_type' => 'tel',
                         'type' => 'text',
-                        'display' => __('Phone Number'),
+                        'display' => __('Phone Number :'),
                         'width' => 100,
-                        'instructions' => __('Define the phone number, where you can be contacted')
+                        'instructions' => __('Define the phone number, where you can be contacted. Prefix the phone number with the country code ( don\'t add 00 or + ). Eg: 441632960527')
                     ],
                     'widget-position' => [
                         'options' => [
@@ -70,18 +59,11 @@ class Formulus
                         'push_tags' => false,
                         'cast_booleans' => false,
                         'type' => 'select',
-                        'display' => __('Widget Position'),
+                        'display' => __('Widget Position :'),
                         'default' => 'left',
                         'instructions' => __('Choose the position where the widget will be displayed.'),
                     ],
                     
-                ],
-            ],
-
-            'sidebar' => [
-                'display' => 'Sidebar',
-                'fields' => [
-                   
                 ],
             ],
         ]);

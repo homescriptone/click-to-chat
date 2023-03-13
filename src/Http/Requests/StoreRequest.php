@@ -19,7 +19,8 @@ class StoreRequest extends FormRequest
                 'boolean'
             ],
             'message' => [
-                'string'
+                'string',
+                'nullable'
             ],
             'widget-app' =>[
                 'string'

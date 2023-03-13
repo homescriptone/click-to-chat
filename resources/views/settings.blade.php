@@ -1,5 +1,5 @@
 @extends('statamic::layout')
-@section('title', __('Create Coupon'))
+@section('title', __('Click To Chat'))
 @section('wrapper_class', 'max-w-3xl')
 
 @section('content')

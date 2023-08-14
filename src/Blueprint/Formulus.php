@@ -10,7 +10,7 @@ class Formulus
     public static function getBlueprint(): FieldsBlueprint
     {
 
-        return Blueprint::makeFromSections([
+        return Blueprint::makeFromTabs([
             'main' => [
                 'display' => 'Main',
                 'fields' => [

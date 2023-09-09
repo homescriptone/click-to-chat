@@ -38,11 +38,11 @@ To configure the widget, access the Control Panel and head to the Click To Chat 
 
 Once you have configured the settings in the Control Panel, make sure to add the tag to any of the layouts of your website. The tag to use is:
 
-> {{clicktochat}}
+> {{click_to_chat}}
 
 ### Support
 
-If you encounter any issues with the add-on or have any questions, please don't hesitate to contact our support team [here](https://homescriptone.com/contact?utm_source=https://statamic.com).
+If you encounter any issues with the add-on or have any questions, please don't hesitate to contact our support team [here](https://homescriptone.freshdesk.com/support/home).
 
 ## Developers
 
@@ -58,4 +58,4 @@ See our [contributing guide](CONTRIBUTING.md) for more information.
 
 ### License
 
-This is commercial software. You may use the package for your sites. Each site requires it's own license.
+This is open-source software, feel free to fork it and improve it.

@@ -6,7 +6,7 @@ use Statamic\Tags\Tags as StatamicTags;
 class ClickToChat extends StatamicTags
 {
     /**
-     * The {{ clicktochat }} tag.
+     * The {{ click_to_chat }} tag.
      *
      * @return string|array
      */
@@ -14,9 +14,6 @@ class ClickToChat extends StatamicTags
     {
        return $this->get_widget();
     }
-
-    public $tags = 'clicktochat';
-
 
     private function get_widget() {
         $values = Box::get_values();

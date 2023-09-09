@@ -13,7 +13,7 @@ class ServiceProvider extends AddonServiceProvider
     ];
 
     protected $tags = [
-        \Homescriptone\ClickToChatWhatsapp\Tags\Clicktochat::class,
+        \Homescriptone\ClickToChatWhatsapp\Tags\ClickToChat::class,
     ];
 
     protected $commands = [

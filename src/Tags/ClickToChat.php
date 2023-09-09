@@ -1,9 +1,9 @@
 <?php
 namespace Homescriptone\ClickToChatWhatsapp\Tags;
 use Homescriptone\ClickToChatWhatsapp\Utils\Box;
-use Statamic\Tags\Tags;
+use Statamic\Tags\Tags as StatamicTags;
 
-class Clicktochat extends Tags
+class ClickToChat extends StatamicTags
 {
     /**
      * The {{ clicktochat }} tag.
@@ -14,6 +14,8 @@ class Clicktochat extends Tags
     {
        return $this->get_widget();
     }
+
+    public $tags = 'clicktochat';
 
 
     private function get_widget() {
